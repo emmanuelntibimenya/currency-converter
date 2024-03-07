@@ -32,12 +32,12 @@ export default function App() {
         type="text"
         value={amount}
         onChange={(e) => setAmount(Number(e.target.value))}
-        // disabled={isLoading}
+        disabled={isLoading}
       />
       <select
         value={fromCur}
         onChange={(e) => setFromCur(e.target.ariaValueMin)}
-        // disabled={isLoading}
+        disabled={isLoading}
       >
         <option value="USD">USD</option>
         <option value="EUR">EUR</option>
@@ -47,7 +47,7 @@ export default function App() {
       <select
         value={toCur}
         onChange={(e) => setToCur(e.target.value)}
-        // disabled={isLoading}
+        disabled={isLoading}
       >
         <option value="USD">USD</option>
         <option value="EUR">EUR</option>
